@@ -1,0 +1,199 @@
+.contactus-section {
+  background-color: #0e0e0e;
+  color: #ffffff;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  padding-top: 0;
+}
+
+.contactus-container {
+  width: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.contact-title-container {
+  width: 100vw;
+  background-color: #0000006b;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.contactus-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fad94b;
+  padding: 25px 0px;
+  animation: neonGradient 5s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(45deg, #ffd51c, #992cff, #fad94b);
+  background-size: 200% 200%;
+}
+
+.contactus-description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.contactus-content {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contactus-card {
+  background-color: #232323;
+  background-image: linear-gradient(45deg, #fad94b, #8a2be2, #fad94b);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 300px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.7s ease, box-shadow 0.3s ease, background-color 0.7s ease;
+  color: #c5c5c5;
+}
+
+.contactus-card:hover {
+  transform: scale(1.05);
+}
+
+.contactus-image {
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.contactus-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.contactus-card-description {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #dcdcdc;
+  background-color: #0e0e0e41;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.contactus-form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contactus-input, .contactus-textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.contactus-btn {
+  padding: 12px 24px;
+  background-color: #fad94b;
+  color: #161616;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contactus-btn:hover {
+  background-color: #8400ff;
+  color: #ffff;
+  transform: translateY(-2px);
+}
+
+.feedback-section {
+  margin-top: 30px;
+}
+
+.feedback-description {
+  font-size: 1.1rem;
+  color: #dcdcdc;
+  line-height: 1.6;
+}
+
+.feedback-link {
+  color: #fad94b;
+  text-decoration: none;
+}
+
+.feedback-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes neonGradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contactus-title {
+      font-size: 5rem;
+  }
+  .contactus-card {
+      width: 30%;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .contactus-title {
+      font-size: 2.5rem;
+  }
+  .contactus-description {
+      font-size: 1rem;
+  }
+  .contactus-container {
+      padding: 20px;
+  }
+  .contactus-card {
+      max-width: 100%;
+  }
+  .contactus-form {
+      width: 90%;
+  }
+  .contactus-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
