@@ -26,7 +26,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
     // Sending data using EmailJS
     emailjs.send(
       process.env.REACT_APP_EMAILJS_SERVICE_ID,
